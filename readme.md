@@ -75,12 +75,11 @@
 
 ### **Langkah-langkah Hosting Aplikasi Web**:
 
-1. Mencari platform hosting gratis.  
-2. Memilih layanan hosting di InfinityFree dengan domain `http://perpusalma.42web.io/`.  
-3. Mengunggah semua file aplikasi ke direktori `htdocs` pada *file manager*.  
-4. Menyesuaikan konfigurasi database dengan database yang disediakan oleh server.  
-5. Melakukan pengujian aplikasi.  
-6. Hosting selesai dilakukan.
+1. Mencari platform hosting gratis.    
+2. Mengunggah semua file aplikasi ke direktori `htdocs` pada *file manager*.  
+3. Menyesuaikan konfigurasi database dengan database yang disediakan oleh server.  
+4. Melakukan pengujian aplikasi.  
+5. Hosting selesai dilakukan.
 
 ### **Penyedia Hosting yang Dipilih**:
 
