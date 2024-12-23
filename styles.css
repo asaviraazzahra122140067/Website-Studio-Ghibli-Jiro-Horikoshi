@@ -1,0 +1,320 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)
+    ), url('img/img2\ lsc.png'); /* Gambar latar belakang */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #5c8077;
+    color: white;
+    padding: 15px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    align-items: flex-start;
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.humburger {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    z-index: 20;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.humburger:hover {
+    color: #e0e0e0;
+}
+
+.about-film, .extra-info{
+    background-color: rgba(244, 244, 244, 0.9);
+}
+
+.login-box {
+    background-color:rgba(255, 87, 51, 0.9);
+}
+
+.login-button {
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #4b6a61;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.create-button {
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #4b6a61;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+#fullname, #email, #password {
+    font-size: 25px;
+    padding: 5px 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+header .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    color: #e0e0e0;
+    margin-top: 5px;
+}
+
+nav {
+    margin: 0 2rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Cover Image */
+.cover-image {
+    width: 100%;
+    max-width: auto; /* Ukuran lebar gambar diubah menjadi 1000px */
+    margin: 20px auto;
+    max-height: 400px; /* Meningkatkan tinggi maksimum gambar */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-image img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About the Film Box */
+.about-film {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-film h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.about-film p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Extra info section */
+.extra-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-box {
+    flex: 1;
+    max-width: 30%;
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container {
+    max-width: 1000px; /* Atur lebar maksimum */
+    margin: 40px auto; /* Jarak atas dan bawah serta pusatkan */
+    padding: 40px; /* Padding di dalam box */
+    background-color: #f4f4f4; /* Warna latar belakang box */
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)
+    ), url('img/img2\ lsc.png'); /* Gambar latar belakang */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #ccc; /* Border tipis */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    position: relative;
+    overflow: hidden;
+}
+
+
+.call-to-action {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.call-to-action p {
+    margin: 10px 0; /* Jarak antar paragraf */
+    font-size: 18px; /* Ukuran font */
+    line-height: 1.5; /* Jarak antar baris */
+    font-weight: 600;
+}
+
+/* Kotak "Ayok Login" */
+.login-box {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #5c8077;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 30px;
+}
+
+.login-box:hover {
+    background-color: #ff704d;
+    transform: translateY(-2px);
+}
+
+table thead {
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    background-color: #5c8077;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 400;
+    margin-top: 230px;
+}
+
+
+@media (max-width: 992px) {
+    .humburger {
+        display: block; /* Tampilkan hamburger pada layar kecil */
+    }
+
+    .logo-title {
+        flex: 1;
+    }
+
+    .login-page {
+        margin-top: 100px;
+    }
+    
+
+    nav ul {
+        display: none; /* Sembunyikan menu default di layar kecil */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(92, 128, 119, 0.95);
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 20px 0;
+        z-index: 9;
+        transition: all 0.3s ease;
+    }
+
+    nav ul.active {
+        display: flex; /* Tampilkan menu saat tombol hamburger diklik */
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        padding: 15px 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #e0e0e0;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        background-color: #4b6a61;
+    }
+}
+

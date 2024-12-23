@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <!-- Ikon hamburger -->
+            <div class="humburger" onclick="toggleMenu()">
+                &#9776; <!-- Ikon hamburger (3 garis) -->
+            </div>
+            <div class="logo-title">
+                <img src="img/logo ghibli.jpg" alt="Logo Jiro" class="logo"> 
+                <div>
+                    <h1>Jirō Horikoshi</h1>
+                    <h2>堀越 二郎</h2>
+                </div>
+            </div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="./table.html">Movie List</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul>
+            </nav>            
+        </div>
+    </header>
+
+    <div class="login-container register-page">
+        <div class="form-frame">
+            <h1 class="text-center">Daftar Sekarang</h1>
+            <form class="vstack gap-3" method="post" action="./register.php">
+                <div>
+                    <label for="fullname">Full Name</label>
+                    <input class="form-control" type="text" id="fullname" name="fullname" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="date">Tanggal lahir</label>
+                    <input class="form-control" type="date" id="birth" name="birth" required>
+                </div>
+                <div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="gender" type="radio" value="male" id="male">
+                        <label class="form-check-label" for="male">
+                            Laki-laki
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" name="gender" type="radio" value="female" id="female">
+                        <label class="form-check-label" for="female">
+                            Perempuan
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <label for="password">Password</label> <br>
+                    <input class="form-control" type="password" id="password" name="password" required>
+                </div>
+                <div class="form-check form-check-lg">
+                    <input class="form-check-input" name="confirm" type="checkbox" value="female" id="female">
+                    <label class="form-check-label" for="female">
+                        Setujui syarat dan ketentuan
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Create Account</button>
+            </form>
+            <p class="my-2">Sudah Punya akun? <a href="./login.html">Login</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Aspzhr Web. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./register.js"></script>
+    
+</body>
+</html>
